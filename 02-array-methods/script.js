@@ -1,2 +1,10 @@
-const array = [23, 20, 19, 69];
-console.log(array);
+// let x;
+// const array = [1, 34, 55, 95, 15];
+// array.push(100);
+// array.unshift(1);
+// x = array.includes(70);
+// x = array.indexOf(340);
+// x = array.slice(1, 4);
+// x = array.splice(3, 1);
+// x = array.splice(1, 4).reverse().toString().charAt(0);
+// console.log(x);
