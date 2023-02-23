@@ -33,3 +33,36 @@ x = Object.entries(todo);
 x = todo.hasOwnProperty('car');
 
 console.log(x);
+
+const todo = new Object();
+todo.id = 1;
+todo.title = 'Buy milk';
+todo.compleated = false;
+
+const person = {
+	address: {
+		coords: {
+			lat: 42.3801,
+			lng: -71.0589,
+		},
+	},
+};
+
+console.log(person.address.coords.lat);
+
+const objA = { a: 1, b: 2, c: 3 };
+const objB = { d: 4, e: 5, f: 6 };
+const objC = { ...objA, ...objB };
+// const objC = Object.assign(objA, objB);
+console.log(objC);
+
+const people = [
+	{ id: 1, name: 'John' },
+	{ id: 2, name: 'Sara' },
+	{ id: 3, name: 'Mike' },
+];
+
+console.log(people[1].name);
+
+console.log(Object.entries(todo));
+console.log(todo.hasOwnProperty('plane'));
