@@ -1,0 +1,14 @@
+{
+    "firstName": "Emilia",
+    "lastName": "Kożuch",
+    "age": 20,
+    "hasChildren": false,
+    "education": "",
+    "address": {
+        "city": "Kotóż Mały",
+        "street": "Cicha 20",
+        "population": 100
+    },   
+    "animals": ["Lusia", "Gapcia", "Benek"],
+    "bike": null
+}
