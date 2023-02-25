@@ -28,9 +28,9 @@ const library = [
 	},
 ];
 
-library[0].status.read = true;
-library[1].status.read = true;
-library[2].status.read = true;
+for (let i = 0; i < library.length; i++) {
+	library[i].status.read = true;
+}
 
 const { title: firstBook } = library[0];
 
