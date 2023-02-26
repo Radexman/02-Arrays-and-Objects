@@ -27,8 +27,8 @@ let x;
 // x = arr.splice(2, 1);
 // x = arr.splice(1, 4).reverse().toString().charAt(0);
 
-const fruits = ['apple', 'pear', 'orange'];
-const berries = ['strawberry', 'blueberry', 'raspberry'];
+// const fruits = ['apple', 'pear', 'orange'];
+// const berries = ['strawberry', 'blueberry', 'raspberry'];
 
 // fruits.push(berries);
 
@@ -36,12 +36,23 @@ const berries = ['strawberry', 'blueberry', 'raspberry'];
 
 // x = allFruits[1][0];
 
-x = fruits.concat(berries);
+// x = fruits.concat(berries);
 
-const allFruits = [...fruits, ...berries];
+// const allFruits = [...fruits, ...berries];
 
-x = allFruits;
+// x = allFruits;
 
-const arr = [1, 2, [3, 4], 5, [6, 7], 8];
+// const arr = [1, 2, [3, 4], 5, [6, 7], 8];
 
-console.log(arr.flat());
+// console.log(arr.flat());
+
+const arr = [1, 2, 3, 4, 5];
+arr.push(6);
+arr.unshift(0);
+arr.reverse();
+
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = [5, 6, 7, 8, 9, 10];
+const arr3 = [...arr1, ...arr2];
+arr3.splice(4, 1);
+console.log(arr3);
