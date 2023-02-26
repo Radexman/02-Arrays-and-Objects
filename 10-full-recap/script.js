@@ -166,38 +166,97 @@ let x;
 // const obj = JSON.parse(str);
 
 // console.log(obj);
-const library = [
-	{
-		title: 'Metro',
-		author: 'Dimitri Glukovsky',
-		status: {
-			own: true,
-			reading: false,
-			read: false,
-		},
-	},
-	{
-		title: 'Witcher',
-		author: 'Andrzej Sapkowski',
-		status: {
-			own: true,
-			reading: false,
-			read: false,
-		},
-	},
-	{
-		title: 'Game of Thrones',
-		author: 'George R.R. Martin',
-		status: {
-			own: true,
-			reading: false,
-			read: false,
-		},
-	},
-];
+// const library = [
+// 	{
+// 		title: 'Metro',
+// 		author: 'Dimitri Glukovsky',
+// 		status: {
+// 			own: true,
+// 			reading: false,
+// 			read: false,
+// 		},
+// 	},
+// 	{
+// 		title: 'Witcher',
+// 		author: 'Andrzej Sapkowski',
+// 		status: {
+// 			own: true,
+// 			reading: false,
+// 			read: false,
+// 		},
+// 	},
+// 	{
+// 		title: 'Game of Thrones',
+// 		author: 'George R.R. Martin',
+// 		status: {
+// 			own: true,
+// 			reading: false,
+// 			read: false,
+// 		},
+// 	},
+// ];
 
-library[0].status.read = true;
-library[1].status.read = true;
-library[2].status.read = true;
-const { title: firstBook } = library[0];
-const str = JSON.stringify(library);
+// library[0].status.read = true;
+// library[1].status.read = true;
+// library[2].status.read = true;
+// const { title: firstBook } = library[0];
+// const str = JSON.stringify(library);
+
+// function sayHello() {
+// 	console.log('Hello World');
+// }
+
+// sayHello();
+
+// function add(num1, num2) {
+// 	console.log(num1 + num2);
+// }
+
+// add(5, 10);
+
+// function subtract(num1, num2) {
+// 	return num1 - num2;
+// }
+
+// const result = subtract(10, 2);
+
+// console.log(result);
+
+function registerUser(user = 'Bot') {
+	// if (!user) {
+	// 	user = 'Bot';
+	// }
+	return user + ' is registered';
+}
+
+console.log(registerUser('Emilia'));
+
+function sum(...numbers) {
+	let total = 0;
+	for (num of numbers) {
+		total += num;
+	}
+	return total;
+}
+
+console.log(sum(1, 2, 3, 5, 10));
+
+function loginUser(user) {
+	return `The user ${user.name} with the id of ${user.id} is logged in.`;
+}
+
+const user = {
+	id: 1,
+	name: 'John',
+};
+
+console.log(loginUser(user));
+
+const fruits = ['orange', 'pineapple', 'strawberry', 'grape'];
+
+function getRandom(array) {
+	let randomIndex = Math.floor(Math.random() * array.length);
+	return array[randomIndex];
+}
+
+console.log(getRandom(fruits));
