@@ -46,13 +46,81 @@ let x;
 
 // console.log(arr.flat());
 
-const arr = [1, 2, 3, 4, 5];
-arr.push(6);
-arr.unshift(0);
-arr.reverse();
+// const arr = [1, 2, 3, 4, 5];
+// arr.push(6);
+// arr.unshift(0);
+// arr.reverse();
 
-const arr1 = [1, 2, 3, 4, 5];
-const arr2 = [5, 6, 7, 8, 9, 10];
-const arr3 = [...arr1, ...arr2];
-arr3.splice(4, 1);
-console.log(arr3);
+// const arr1 = [1, 2, 3, 4, 5];
+// const arr2 = [5, 6, 7, 8, 9, 10];
+// const arr3 = [...arr1, ...arr2];
+// arr3.splice(4, 1);
+// console.log(arr3);
+
+// const person = {
+// 	name: 'John Doe',
+// 	age: 30,
+// 	isAdmin: true,
+// 	address: {
+// 		street: '123 Main st',
+// 		city: 'Boston',
+// 		state: 'MA',
+// 	},
+// 	hobbies: ['music', 'sports'],
+// };
+
+// x = person.name;
+// x = person['age'];
+// x = person.address.state;
+// x = person.hobbies[0];
+// person.name = 'Jane Doe';
+// person['isAdmin'] = false;
+// delete person.age;
+// person.hasChildern = true;
+// person.greet = function () {
+// 	console.log(`Hello, my name is ${this.name}`);
+// };
+// person.greet();
+// const person2 = {
+// 	'first name': 'Brad',
+// 	'last name': 'Traversy',
+// };
+
+// console.log(person2);
+
+const todo = new Object();
+todo.id = 1;
+(todo.name = 'Buy milk'), (todo.compleated = false);
+x = todo;
+
+const person = {
+	address: {
+		coords: {
+			lat: 42.7463,
+			lng: -71.6354,
+		},
+	},
+};
+
+x = person.address.coords.lat;
+
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 3, d: 4 };
+const obj3 = { ...obj1, ...obj2 };
+const obj4 = Object.assign({}, obj1, obj2);
+
+const todos = [
+	{ id: 1, name: 'Buy milk' },
+	{ id: 2, name: 'Take out trash' },
+	{ id: 3, name: 'Wash the car' },
+];
+
+x = todos[0].name;
+
+x = Object.keys(todo);
+x = Object.keys(todo).length;
+x = Object.values(todo);
+x = Object.entries(todo);
+x = todo.hasOwnProperty('age');
+
+console.log(x);
