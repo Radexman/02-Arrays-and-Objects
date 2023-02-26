@@ -88,39 +88,116 @@ let x;
 
 // console.log(person2);
 
-const todo = new Object();
-todo.id = 1;
-(todo.name = 'Buy milk'), (todo.compleated = false);
-x = todo;
+// const todo = new Object();
+// todo.id = 1;
+// (todo.name = 'Buy milk'), (todo.compleated = false);
+// x = todo;
 
-const person = {
-	address: {
-		coords: {
-			lat: 42.7463,
-			lng: -71.6354,
+// const person = {
+// 	address: {
+// 		coords: {
+// 			lat: 42.7463,
+// 			lng: -71.6354,
+// 		},
+// 	},
+// };
+
+// x = person.address.coords.lat;
+
+// const obj1 = { a: 1, b: 2 };
+// const obj2 = { c: 3, d: 4 };
+// const obj3 = { ...obj1, ...obj2 };
+// const obj4 = Object.assign({}, obj1, obj2);
+
+// const todos = [
+// 	{ id: 1, name: 'Buy milk' },
+// 	{ id: 2, name: 'Take out trash' },
+// 	{ id: 3, name: 'Wash the car' },
+// ];
+
+// x = todos[0].name;
+
+// x = Object.keys(todo);
+// x = Object.keys(todo).length;
+// x = Object.values(todo);
+// x = Object.entries(todo);
+// x = todo.hasOwnProperty('age');
+
+// console.log(x);
+// const firstName = 'Emilia';
+// const lastName = 'Kożuch';
+// const age = 30;
+
+// const person = {
+// 	firstName,
+// 	lastName,
+// 	age,
+// };
+
+// x = person;
+
+// const todo = {
+// 	id: 1,
+// 	title: 'Take out trash',
+// 	user: {
+// 		name: 'John',
+// 	},
+// };
+
+// const {
+// 	id: todoId,
+// 	title,
+// 	user: { name },
+// } = todo;
+
+// console.log(todoId);
+
+// const numbers = [54, 23, 65, 23, 43, 90];
+
+// const [first, second, ...rest] = numbers;
+// console.log(first, second, rest);
+// const post = {
+// 	id: 1,
+// 	title: 'Post One',
+// 	body: 'This is the body',
+// };
+
+// const str = JSON.stringify(post);
+// const obj = JSON.parse(str);
+
+// console.log(obj);
+const library = [
+	{
+		title: 'Metro',
+		author: 'Dimitri Glukovsky',
+		status: {
+			own: true,
+			reading: false,
+			read: false,
 		},
 	},
-};
-
-x = person.address.coords.lat;
-
-const obj1 = { a: 1, b: 2 };
-const obj2 = { c: 3, d: 4 };
-const obj3 = { ...obj1, ...obj2 };
-const obj4 = Object.assign({}, obj1, obj2);
-
-const todos = [
-	{ id: 1, name: 'Buy milk' },
-	{ id: 2, name: 'Take out trash' },
-	{ id: 3, name: 'Wash the car' },
+	{
+		title: 'Witcher',
+		author: 'Andrzej Sapkowski',
+		status: {
+			own: true,
+			reading: false,
+			read: false,
+		},
+	},
+	{
+		title: 'Game of Thrones',
+		author: 'George R.R. Martin',
+		status: {
+			own: true,
+			reading: false,
+			read: false,
+		},
+	},
 ];
 
-x = todos[0].name;
-
-x = Object.keys(todo);
-x = Object.keys(todo).length;
-x = Object.values(todo);
-x = Object.entries(todo);
-x = todo.hasOwnProperty('age');
-
-console.log(x);
+library[0].status.read = true;
+library[1].status.read = true;
+library[2].status.read = true;
+const { title: firstBook } = library[0];
+const str = JSON.stringify(library);
